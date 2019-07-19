@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.toast:
                 AlertDialogUtil alertDialogUtil = new AlertDialogUtil();
-                alertDialogUtil.showAlertDialogToast(this, "确定删除这条记录");
+                AlertDialogUtil.showAlertDialogToast(this, "确定删除这条记录");
                 alertDialogUtil.setOnDialogListener(new AlertDialogUtil.OnDialogListener() {
                     @Override
                     public void onConfirmClick() {

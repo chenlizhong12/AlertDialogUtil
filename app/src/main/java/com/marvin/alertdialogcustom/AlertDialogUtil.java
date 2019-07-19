@@ -31,7 +31,7 @@ import android.widget.TextView;
  * Created by clz on 2019/7/19
  */
 public class AlertDialogUtil {
-    private  OnDialogListener mOnDialogListener;
+    private static OnDialogListener mOnDialogListener;
 
     public static void showAlertDialog(Context context, String title, final TextView tv, final String[] args) {
         AlertDialog.Builder builder = new AlertDialog.Builder(context);
@@ -56,7 +56,7 @@ public class AlertDialogUtil {
         dialog.getWindow().setContentView(view);
     }
 
-    public  void showAlertDialogToast(Context context, String message) {
+    public static void showAlertDialogToast(Context context, String message) {
         AlertDialog.Builder builder = new AlertDialog.Builder(context);
         final AlertDialog alertDialog = builder.create();
         alertDialog.show();
