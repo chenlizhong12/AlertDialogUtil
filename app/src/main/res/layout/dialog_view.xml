@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_title_alert_dialog_addbook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="书籍分类"
+        android:textColor="#000"
+        android:textSize="17sp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:paddingLeft="12dp"
+        android:background="#FFF"
+        />
+    <!--分割线-->
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0.5px"
+        android:background="#FF645e5e" />
+    <ListView
+        android:id="@+id/lv_alert_dialog_addbook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFF"
+        >
+    </ListView>
+
+</LinearLayout>
