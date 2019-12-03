@@ -486,5 +486,6 @@ public class BaiduTestActivity extends ActivityMiniRecog  {
             String errorResult = errorCode + errorSubCode;
             txtResult.setText("解析错误,原因是:" + desc + "\n" + errorResult);
         }
+        asr.send(SpeechConstant.ASR_STOP, null, null, 0, 0); //
     }
 }

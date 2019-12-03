@@ -3,7 +3,7 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 27
     defaultConfig {
-        minSdkVersion 16
+        minSdkVersion 23
         applicationId "com.marvin.alertdialogcustom"
         targetSdkVersion 27
         versionCode 1
@@ -27,8 +27,11 @@ dependencies {
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
     implementation 'com.github.LuckSiege.PictureSelector:picture_library:v2.2.3'
     implementation 'com.google.code.gson:gson:2.8.5'
-    //    compileOnly("com.tinkerpatch.tinker:tinker-android-anno:1.9.13.3")
+    //    compileOnly("com.tinkerpatch.tinker:tinker-android-anno:1.9.13.3")//用于APP的热更新
     //    implementation("com.tinkerpatch.sdk:tinkerpatch-android-sdk:1.2.13.3")
     implementation 'com.gyf.immersionbar:immersionbar:3.0.0-beta05'
-    implementation project(':core')
+    implementation project(':core')//用于百度离线语音识别，第一次识别，需要进行联网操作，文本也需要自行进行添加
+    implementation 'com.zhy:okhttputils:2.6.2'
+    implementation 'com.github.0xZhangKe:WebSocketDemo:3.0.1'
+
 }
